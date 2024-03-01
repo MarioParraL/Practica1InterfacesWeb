@@ -1,0 +1,92 @@
+.tittle{
+  position: absolute;
+  color: white;
+  font:bolder;
+  font-size: 30px;
+  border-radius: 15px;
+  background-color:blueviolet;
+  top:10%;
+  text-align: center;
+  margin:  auto;
+  width: 40%;
+  padding: 10px 10px;
+  animation: movement 3s;
+}
+
+.tittle:hover{
+  color: black;
+  background: yellow;
+  animation: 2s ease-in-out infinite;
+}
+ @keyframes movement {
+  50% {
+    transform: rotate3d(1, 1, 1, 180deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+ }
+
+ .subtittle{
+  position: absolute;
+  color: violet;
+  top: 30%;
+  left: 43%;
+  text-align: center;
+  margin: auto;
+ }
+ .subtittle:hover{
+  background-color: crimson;
+ }
+
+
+.phrase{
+  position: absolute;
+  top: 55%;
+  left: 60%;  
+  text-align: center;
+  margin: auto;
+  width: 30%; 
+  
+}
+
+.phrase:hover{
+  font-family:fantasy;
+  background-color: palevioletred;
+  border-radius: 40px;
+}
+
+.phrase:active{
+  color: gold;
+  background-color: black;
+}
+
+ 
+body {
+  color:aquamarine;
+  font-size: 50px;
+  background-image: url(download.jpg);
+  background-size: 100%;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+.gif{
+  animation: movement 3s ease-in-out infinite;
+}
+
+.button{
+  color: black;
+  background-color:lime;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.button:active{
+  color:black;
+  background-color:deeppink
+}
