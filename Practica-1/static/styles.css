@@ -1,23 +1,80 @@
+.principal{
+  background-size: cover;
+  background-image: url(download.jpg);
+  background-position: center;
+  margin: 0; 
+  padding: 0;
+  height: 100vh;
+  
+}
+
+.miaudio{
+  position: absolute; 
+  left: 81%;
+  transform: translate(-50%); 
+}
+
+.info{
+  position: absolute; 
+  top:8%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: blueviolet;
+  background-color:lightgreen;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: move-info 6s infinite;
+}
+
+.phrase{
+  position: absolute; 
+  top: 55%; 
+  left: 70%;
+  transform: translate(-50%, -50%); 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  color:fuchsia;
+  cursor: pointer;
+  font-size: 45px;
+  text-shadow: 1px 1px 3px;
+}
+
+.phrase:hover{
+  font-family:fantasy;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.phrase:active{
+  color: gold;
+  background-color: black;
+}
+
+
 .tittle{
   position: absolute;
+  left: 50%; 
+  transform: translate(-50%);            
   color: white;
   font:bolder;
+  font-weight: bold;
   font-size: 30px;
+  text-shadow: 2px 2px 2px;
   border-radius: 15px;
   background-color:blueviolet;
-  top:10%;
-  text-align: center;
-  margin:  auto;
-  width: 40%;
-  padding: 10px 10px;
-  animation: movement 3s;
+  cursor:e-resize;
+  
 }
 
 .tittle:hover{
   color: black;
   background: yellow;
-  animation: 2s ease-in-out infinite;
+  
 }
+
  @keyframes movement {
   50% {
     transform: rotate3d(1, 1, 1, 180deg);
@@ -27,66 +84,61 @@
   }
  }
 
- .subtittle{
-  position: absolute;
-  color: violet;
-  top: 30%;
-  left: 43%;
-  text-align: center;
-  margin: auto;
- }
- .subtittle:hover{
-  background-color: crimson;
- }
-
-
-.phrase{
-  position: absolute;
-  top: 55%;
-  left: 60%;  
-  text-align: center;
-  margin: auto;
-  width: 30%; 
-  
+ @keyframes move-info {
+  0% {
+    left: 0;
+  }
+  100% {
+    top: 200px; /* Cambia este valor según la distancia que desees que el texto se mueva */
+  }
 }
 
-.phrase:hover{
-  font-family:fantasy;
-  background-color: palevioletred;
-  border-radius: 40px;
-}
 
-.phrase:active{
-  color: gold;
-  background-color: black;
-}
-
- 
-body {
-  color:aquamarine;
-  font-size: 50px;
-  background-image: url(download.jpg);
-  background-size: 100%;
-  height: auto;
-  width: auto;
-  text-align: center;
-}
-
-.gif{
+img.gif{
+  display: flex;
+  justify-content: flex-end;
   animation: movement 3s ease-in-out infinite;
 }
 
-.button{
-  color: black;
-  background-color:lime;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
-  padding: 10px 20px;
+.buttons{
+  display: flex;
+  justify-content:space-around;
+  justify-content: flex-end;
+  width: 65%;
+  top:10%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   cursor: pointer;
-  border-radius: 30px;
+  position: relative;
+  box-shadow: 30%;
+  text-shadow: 30%;
+}
+
+
+img.imagenApi{
+  position: absolute;
+  top: 20%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40% 40% 0 0;
+  cursor: crosshair;
+}
+
+button{
+  padding: 30px 30px;
+  color: black;
+  background-color: lime;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
 }
 
 .button:active{
   color:black;
   background-color:deeppink
+}
+
+.button:hover{
+  color:black;
+  background-color: deeppink;
+  cursor: pointer;
 }
