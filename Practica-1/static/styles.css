@@ -38,7 +38,7 @@
   font-weight: 500;
   color:fuchsia;
   cursor: pointer;
-  font-size: 45px;
+  font-size: 35x;
   text-shadow: 1px 1px 3px;
 }
 
@@ -61,8 +61,8 @@
   color: white;
   font:bolder;
   font-weight: bold;
-  font-size: 30px;
-  text-shadow: 2px 2px 2px;
+  font-size: 23px;
+  text-shadow: 1.5px 1.5px 1.2px;
   border-radius: 15px;
   background-color:blueviolet;
   cursor:e-resize;
@@ -89,15 +89,16 @@
     left: 0;
   }
   100% {
-    top: 200px; /* Cambia este valor según la distancia que desees que el texto se mueva */
+    top: 150px; 
   }
 }
 
 
 img.gif{
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   animation: movement 3s ease-in-out infinite;
+  width: 20%;
 }
 
 .buttons{
@@ -105,7 +106,7 @@ img.gif{
   justify-content:space-around;
   justify-content: flex-end;
   width: 65%;
-  top:10%;
+  top:15%;
   font-family:Georgia, 'Times New Roman', Times, serif;
   cursor: pointer;
   position: relative;
@@ -124,7 +125,7 @@ img.imagenApi{
 }
 
 button{
-  padding: 30px 30px;
+  padding: 15px 15px;
   color: black;
   background-color: lime;
   border-radius: 25px;
